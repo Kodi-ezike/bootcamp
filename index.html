@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section id="html">
+        <h1>Introduction to HTML & CSS</h1>
+        <h2>Basic HTML</h2>
+        <p class="text">HTML is a markup language that uses a special syntax or notation to describe the structure of a webpage to the browser. HTML elements usually have opening and closing tags that surround and give meaning to content. For example, different elements can describe text as a heading, paragraph, or list item.There are various tags used in HTML for different functions.</p>
+        <h3>HTML TAGS</h3>
+        <p class="text"><b>Heading tags:</b> h1, h2, h3, h4, h5, and h6 - Headings. These are used to show headings and subsequent sub-headings.</p>
+        <code>
+            <span>h1</span>Introduction to HTML & CSS<span>/h1</span>
+        </code>
+        <code>
+            <span>h2</span>Basic HTML<span>/h2</span>
+        </code>
+
+        <p class="text"><b>Paragraph tag:</b> This is used to write a paragraph. </p>
+        <code>
+            <span>p</span>Learning is fun<span>/p</span>    
+        </code>
+
+        <p class="text"> <b>Anchor tag:</b> This is used to hold a link to direct you to another page or website.</p>
+        <code>
+        <span>a href="https://www.google.com"</span> Google <span>/a</span>
+        </code>
+        
+        <p class="text"><b>Division tag:</b> It's a container tag used for grouping things together</p>
+        <code>
+            <p><span>div</span></p>
+            <p id="tab"><span>h1</span>Introduction to HTML & CSS<span>/h1</span></p>
+            <p id="tab"><span>h2</span>Basic HTML<span>/h2</span></p>
+            <p><span>/div</span></p>
+        </code>
+
+        <p class="text"><b>Section tag:</b> This is similar to the "div" tag, can be used to group multiple "div" tags. </p>
+        <code> 
+            <p><span>section</span></p>
+                <p id="tab"><span>div</span></p>
+                <p id="tab2"><span>h1</span>Introduction to HTML<span>/h1</span></p>
+                <p id="tab2"><span>h2</span>Basic HTML<span>/h2</span></p>
+                <p id="tab"><span>/div</span></p>
+
+                <p id="tab"><span>div</span></p>
+                <p id="tab2"><span>h1</span>Introduction to CSS<span>/h1</span></p>
+                <p id="tab2"><span>h2</span>Basic CSS<span>/h2</span></p>
+                <p id="tab"><span>/div</span></p>
+
+            <p><span>/section</span></p>
+        </code> 
+
+        <p class="text"><b>Span tag:</b> A container for small pieces of text that require a different style.</p>
+        <code>
+            <span>p</span>The girl has a <span>span</span>beautiful<span>/span</span> smile<span>/p</span>
+        </code>
+
+        <p class="text"><b>Button tag:</b> This can be used to submit data after filling a form</p>
+        <code>
+            <span>button</span>Submit<span>/button</span>  
+        </code>
+
+        <p class="text"><b>Image tag:</b> An image tag is used to load images into the page, it has an "src" attribute to show where the image is located and an "alt" tag to describe the image for people with disabilities. Image tags are always self-closing tags.</p>
+        <code>
+            <span>img src="watch.jpg" alt="watch"/</span>
+        </code>
+
+        <p class="text"><b>Input tag:</b> This is used to gather data from the user. It is also a self closing tag. There are various forms of input types such as number, date, range, email, button, checkbox, radio etc. These types are used for various functions.</p>
+        <code>
+            <span>input type="text" alt="watch"/</span>
+        </code>
+        <p class="text"><b>Textarea:</b> This can be used to collect form responses or long messages. It also has 'cols' and 'rows' attribute which derermines the width and height respectively.</p>
+        <code>
+            <span>textarea cols="30" rows="10"</span><span>/textarea</span>
+        </code>
+
+        <h3>ATTRIBUTES</h3>
+        <p class="text"><b>Classes:</b>These are special attributes that can be added to most HTML tags, it helps to name the tags and style them differently.</p>
+        <code>
+            <p id="tab"><span>h1 class="heading"</span>Introduction to HTML & CSS<span>/h1</span></p>
+        </code>
+        
+        <p class="text"><b>ID's:</b> These are similar to classes but are used to give unique names to a tag. </p>
+        <code> 
+            <p><span>section</span></p>
+                <p id="tab"><span>div class="text" id="html"</span></p>
+                <p id="tab2"><span>h1</span>Introduction to HTML<span>/h1</span></p>
+                <p id="tab2"><span>h2</span>Basic HTML<span>/h2</span></p>
+                <p id="tab"><span>/div</span></p>
+
+                <p id="tab"><span>div class="text" id="css"</span></p>
+                <p id="tab2"><span>h1</span>Introduction to CSS<span>/h1</span></p>
+                <p id="tab2"><span>h2</span>Basic CSS<span>/h2</span></p>
+                <p id="tab"><span>/div</span></p>
+
+            <p><span>/section</span></p>
+        </code> 
+
+    </section>
+    
+    <section id="css">
+        <h2>Basic CSS</h2>
+        <p class="text">CSS, or Cascading Style Sheets, tells the browser how to display the text and other content that you write in HTML. With CSS, you can control the color, font, size, spacing, and many other aspects of HTML elements.</p>
+    
+        <h3>CSS Properties</h3>
+
+        <p class="text"><b>Color:</b> This is used to change the color of a text.</p>
+        <code>
+            h1{
+                color:red;
+            }
+        </code>
+
+        <p class="text"><b>Font size:</b> This is used to increase or decrease the font size of a text. CSS has a lot of different measurements, but most things are measured in px, em, or rem.</p>
+        <code>
+            h1{
+                font-size: 40px;
+            }
+        </code>
+
+        <p class="text"><b>Font weight:</b> This is used to increase the font weight of a text, to make it bold or normal. The font weight of a heading tag is bold on default. </p>
+        <code>
+            p{
+                font-weight: bold;
+            }
+        </code>
+
+        <p class="text"><b>Text-decoration:</b> This is used to underline or strike-through a text in different styles such as dashed, dotted etc.</p>
+        <code>
+            h1{
+                text-decoration: underline dashed;
+            }
+        </code>
+
+        <p class="text"><b>Text-tranform:</b> This is used to change the case of a text to upper or lowercase, can also be used to capitalize the first letter of each word.</p>
+        <code>
+            h1{
+                text-tranform: capitalize;
+            }
+        </code>
+
+        <p class="text"><b>Border:</b> This is used to set the border around an item. It can also be given a width, height and radius to give it that curved look at the edge. </p>
+        <code>
+            h1{
+               <p id="tab2">border: 1px solid red;</p> 
+               <p id="tab2">border-width: 50px;</p>  
+            }
+        </code>
+
+        <p class="text"><b>Height:</b> This is used to modify the height of an element, image or container. Otherwise, it takes the default height of it's content. </p>
+        <code>
+            img{
+                height: 400px;
+            }
+        </code>
+
+        <p class="text"><b>Width:</b> This is used to modify the width of an element, image or container. Otherwise, it takes 100% as much width as it can. </p>
+        <code>
+            img{
+                width: 400px;
+            }
+        </code>
+
+        <p class="text"><b>Padding:</b> This is used to create space inside an element.</p>
+        <code>
+            div{
+                padding: 2rem;
+            }
+        </code>
+
+        <p class="text"><b>Margin:</b> This is used to create space outside an element. </p>
+        <code>
+            div{
+                margin: 2rem;
+            }
+        </code>
+
+    </section>
+
+    <p class="attribution">&copy; 2022. Developed by Kodi Ezike </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
